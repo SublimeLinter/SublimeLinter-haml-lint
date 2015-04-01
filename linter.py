@@ -18,8 +18,8 @@ class HamlLint(RubyLinter):
     """Provides an interface to haml-lint."""
 
     syntax = 'ruby haml'
-    cmd = 'haml-lint'
-    version_args = '--version'
+    cmd = 'ruby -S haml-lint'
+    version_args = '-S haml-lint --version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
     version_requirement = '>= 0.6.0'
     regex = r'^.+?:(?P<line>\d+) \[(:?(?P<warning>W)|(?P<error>E))\] (?P<message>.+)'
