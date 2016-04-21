@@ -3,17 +3,17 @@ SublimeLinter-contrib-haml-lint
 
 [![Build Status](https://travis-ci.org/jeroenj/SublimeLinter-contrib-haml-lint.svg?branch=master)](https://travis-ci.org/jeroenj/SublimeLinter-contrib-haml-lint)
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [haml_lint](https://github.com/jeroenj/SublimeLinter-contrib-haml-lint). It will be used with files that have the “Ruby Haml” syntax.
+This linter plugin for [SublimeLinter][docs] provides an interface to [haml-lint](https://github.com/jeroenj/SublimeLinter-contrib-haml-lint). It will be used with files that have the “Ruby Haml” syntax.
 
 ## Installation
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
 
 ### Linter installation
-Before using this plugin, you must ensure that `haml_lint` is installed on your system. To install `haml_lint`, do the following:
+Before using this plugin, you must ensure that `haml-lint` is installed on your system. To install `haml-lint`, do the following:
 
 1. Install [Ruby](http://www.ruby-lang.org).
 
-1. Install `haml_lint` by typing the following in a terminal:
+1. Install `haml-lint` by typing the following in a terminal:
    ```
    [sudo] gem install haml_lint
    ```
@@ -22,12 +22,12 @@ Before using this plugin, you must ensure that `haml_lint` is installed on your 
 1. If you are using `rbenv` or `rvm`, ensure that they are loaded in your shell’s correct startup file. See [here](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#shell-startup-files) for more information.
 
 
-**Note:** This plugin requires `haml_lint` 0.13.0 or later.
+**Note:** This plugin requires `haml-lint` 0.13.0 or later.
 
 ### Linter configuration
-In order for `haml_lint` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
+In order for `haml-lint` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
 
-Once you have installed and configured `haml_lint`, you can proceed to install the SublimeLinter-contrib-haml-lint plugin if it is not yet installed.
+Once you have installed and configured `haml-lint`, you can proceed to install the SublimeLinter-contrib-haml-lint plugin if it is not yet installed.
 
 #### Rubocop config file
 By default the plug-in is looking for `.rubocop.yml` in any of the parent directories
@@ -41,7 +41,7 @@ To install via Package Control, do the following:
 
 1. Within Sublime Text, bring up the [Command Palette][cmd] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
-1. When the plugin list appears, type `haml_lint`. Among the entries you should see `SublimeLinter-contrib-haml-lint`. If that entry is not highlighted, use the keyboard or mouse to select it.
+1. When the plugin list appears, type `haml-lint`. Among the entries you should see `SublimeLinter-contrib-haml-lint`. If that entry is not highlighted, use the keyboard or mouse to select it.
 
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
