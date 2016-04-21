@@ -17,7 +17,7 @@ Before using this plugin, you must ensure that `haml_lint` is installed on your 
    ```
    [sudo] gem install haml_lint
    ```
-   **Note:** Make sure you type `haml_lint` with an underscore (`_`). `gem install haml_lint` will get you an outdated executable.
+   **Note:** Make sure you type `haml_lint` with an underscore (`_`). `gem install haml-lint` will get you an outdated executable.
 
 1. If you are using `rbenv` or `rvm`, ensure that they are loaded in your shell’s correct startup file. See [here](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#shell-startup-files) for more information.
 
