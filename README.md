@@ -3,7 +3,7 @@ SublimeLinter-contrib-haml-lint
 
 [![Build Status](https://travis-ci.org/jeroenj/SublimeLinter-contrib-haml-lint.svg?branch=master)](https://travis-ci.org/jeroenj/SublimeLinter-contrib-haml-lint)
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [haml-lint](https://github.com/jeroenj/SublimeLinter-contrib-haml-lint). It will be used with files that have the “Ruby Haml” syntax.
+This linter plugin for [SublimeLinter][docs] provides an interface to [haml-lint](https://github.com/brigade/haml-lint). It will be used with files that have the “Ruby Haml” syntax.
 
 ## Installation
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
