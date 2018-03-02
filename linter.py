@@ -21,9 +21,9 @@ class HamlLint(RubyLinter):
     regex = r'^.+?:(?P<line>\d+) \[(:?(?P<warning>W)|(?P<error>E))\] (?P<message>.+)'
     tempfile_suffix = 'haml'
     
-    defaults: {
+    defaults = {
+        '--config': '${folder}/.haml-lint.yml',
         'env': {
             'HAML_LINT_RUBOCOP_CONF': '${folder}/.rubocop.yml'
         }
     }
-
