@@ -20,7 +20,7 @@ class HamlLint(RubyLinter):
     cmd = 'ruby -S haml-lint'
     regex = r'^.+?:(?P<line>\d+) \[(:?(?P<warning>W)|(?P<error>E))\] (?P<message>.+)'
     tempfile_suffix = 'haml'
-    
+
     defaults = {
         '--config': '${folder}/.haml-lint.yml',
         'env': {
