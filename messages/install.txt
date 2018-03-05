@@ -1,10 +1,7 @@
-SublimeLinter-contrib-haml-lint
--------------------------------
+SublimeLinter-haml-lint
+-----------------------
 This linter plugin for SublimeLinter provides an interface to haml-lint.
 
-** IMPORTANT! **
+Please read the installation instructions at:
 
-Before this plugin will activate, you *must*
-follow the installation instructions here:
-
-https://github.com/jeroenj/SublimeLinter-contrib-haml-lint
+https://github.com/SublimeLinter/SublimeLinter-haml-lint
