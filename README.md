@@ -27,10 +27,18 @@ In order for `haml-lint` to be executed by SublimeLinter, you must ensure that i
 
 Once you have installed and configured `haml-lint`, you can proceed to install the SublimeLinter-contrib-haml-lint plugin if it is not yet installed.
 
-#### Rubocop config file
-By default the plug-in is looking for `.rubocop.yml` in any of the parent directories
-of the linted file. If your rubocop file is named something else, you can specify
-linter configuration `"rubocop-config": "your_rubocop_file_name.yml"`
+The default configuration is as follows:
+
+```
+    defaults = {
+        '--config': '${folder}/.haml-lint.yml',
+        'env': {
+            'HAML_LINT_RUBOCOP_CONF': '${folder}/.rubocop.yml'
+        }
+    }
+```
+
+If you have your configuration files somewhere else or with a different name, you must set this using the Linter settings.
 
 ## Settings
 - SublimeLinter settings: http://sublimelinter.readthedocs.org/en/latest/settings.html
