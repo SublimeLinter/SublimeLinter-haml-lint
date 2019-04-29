@@ -2,7 +2,7 @@
 # linter.py
 # Linter for SublimeLinter3, a code checking framework for Sublime Text 3
 #
-# Written by Jeroen Jacobs
+# Written by Jeroen Jacobs & Tomas Barry
 # Copyright (c) 2014 Jeroen Jacobs
 #
 # License: MIT
@@ -16,14 +16,10 @@ from SublimeLinter.lint import RubyLinter
 class HamlLint(RubyLinter):
     """Provides an interface to haml-lint."""
 
-    syntax = 'ruby haml'
-    cmd = 'ruby -S haml-lint'
+    cmd = 'ruby -S haml-lint ${args} ${temp_file}'
     regex = r'^.+?:(?P<line>\d+) \[(:?(?P<warning>W)|(?P<error>E))\] (?P<message>.+)'
     tempfile_suffix = 'haml'
 
     defaults = {
-        '--config': '${folder}/.haml-lint.yml',
-        'env': {
-            'HAML_LINT_RUBOCOP_CONF': '${folder}/.rubocop.yml'
-        }
+        'selector': 'text.haml'
     }

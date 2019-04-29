@@ -34,10 +34,7 @@ The docs cover [troubleshooting PATH configuration](http://sublimelinter.com/en/
 The default configuration is as follows:
 
 ```
-'--config': '${folder}/.haml-lint.yml',
-'env': {
-    'HAML_LINT_RUBOCOP_CONF': '${folder}/.rubocop.yml'
-} 
+'selector': 'text.haml'
 ```
 
 If you have your configuration files somewhere else or with a different name, set this using the Linter settings.
