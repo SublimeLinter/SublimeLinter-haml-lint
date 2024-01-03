@@ -16,7 +16,7 @@ from SublimeLinter.lint import RubyLinter
 class HamlLint(RubyLinter):
     """Provides an interface to haml-lint."""
 
-    cmd = 'ruby -S haml-lint ${args} ${temp_file}'
+    cmd = 'haml-lint ${args} ${temp_file}'
     regex = r'^.+?:(?P<line>\d+) \[(:?(?P<warning>W)|(?P<error>E))\] (?P<message>.+)'
     tempfile_suffix = 'haml'
 
