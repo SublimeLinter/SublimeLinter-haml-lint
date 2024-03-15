@@ -13,7 +13,7 @@ SublimeLinter must be installed in order to use this plugin.
 
 Please install via [Package Control](https://packagecontrol.io).
 
-Before using this plugin, ensure that `haml-lint` is installed on your system.
+Before using this plugin, ensure that `haml-lint` (≥0.54.0) is installed on your system.
 To install `haml-lint`, do the following:
 
 1. Install [Ruby](http://www.ruby-lang.org).
